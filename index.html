@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="CropGuard - AI-powered, eco-friendly crop protection for modern farmers. Protect your harvest and boost your yield with smart technology.">
+    <meta name="keywords" content="crop protection, AI farming, sustainable agriculture, pest control">
+    <title>CropGuard - Protect Your Harvest, Boost Your Yield</title>
+    
+    <!-- External Dependencies -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header fixed-header" role="banner">
+        <nav class="navbar container" role="navigation" aria-label="Main navigation">
+            <div class="nav-brand">
+                <div class="brand-icon">
+                    <i class="fas fa-shield-alt"></i>
+                    <div class="pulse-ring" aria-hidden="true"></div>
+                </div>
+                <span class="brand-text">CropGuard</span>
+            </div>
+
+            <ul class="nav-menu" id="navMenu" role="menubar">
+                <li><a class="nav-link active" href="#home" role="menuitem">Home</a></li>
+                <li><a class="nav-link" href="#about" role="menuitem">About</a></li>
+                <li><a class="nav-link" href="#features" role="menuitem">Features</a></li>
+                <li><a class="nav-link" href="#pricing" role="menuitem">Pricing</a></li>
+                <li><a class="nav-link" href="#faqs" role="menuitem">FAQs</a></li>
+                <li><a class="nav-link" href="#contact" role="menuitem">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="btn btn-primary" onclick="navigateToSection('contact')">
+                    Get Started
+                </button>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero-section" aria-labelledby="hero-heading">
+            <div class="hero-particles" aria-hidden="true"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="badge badge-primary">
+                            <i class="fas fa-leaf"></i>
+                            <span>AI-Powered • Eco-Friendly • System</span>
+                        </div>
+
+                        <h1 id="hero-heading" class="hero-title">
+                            <span>Protect Your</span>
+                            <span class="gradient-text">Harvest,</span>
+                            <span>Boost Your Yield</span>
+                        </h1>
+
+                        <p class="hero-subtitle">
+                            Smart, AI-powered, and eco-friendly crop protection for modern farmers across East Africa
+                        </p>
+
+                        <div class="hero-actions">
+                            <button class="btn btn-primary btn-glow" onclick="navigateToSection('contact')">
+                                Get CropGuard
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                            <button class="btn btn-secondary" onclick="playDemo()">
+                                <i class="fas fa-play"></i>
+                                Watch Demo
+                            </button>
+                        </div>
+
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">98%</div>
+                                <div class="stat-label">Pest Detection</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">24/7</div>
+                                <div class="stat-label">Protection</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">0</div>
+                                <div class="stat-label">Chemicals</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-visual">
+                        <div class="device-3d">
+                                <!-- <img style="width: 80%; height: 50%;" src="/assets/device.png" alt=""> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section" aria-labelledby="about-heading">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge badge-secondary">
+                        <i class="fas fa-seedling"></i>
+                        <span>Our Mission</span>
+                    </div>
+                    <h2 id="about-heading">Revolutionizing Agriculture</h2>
+                    <p class="section-subtitle">Building the future of sustainable crop protection</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-content">
+                        <h3>Our Vision</h3>
+                        <p>To make sustainable crop protection accessible, effective, and eco-friendly for farmers everywhere. CropGuard addresses one of agriculture's most persistent challenges: crop loss due to pests.</p>
+                        
+                        <h3>Sustainability First</h3>
+                        <p>CropGuard reduces harmful chemicals, protects biodiversity, and supports regenerative farming. Solar-powered devices and non-lethal deterrents help farmers achieve higher yields while safeguarding the environment.</p>
+
+                        <div class="impact-stats">
+                            <div class="impact-item">
+                                <i class="fas fa-chart-line"></i>
+                                <div>
+                                    <div class="impact-number">40%</div>
+                                    <div class="impact-label">Average Yield Increase</div>
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <i class="fas fa-leaf"></i>
+                                <div>
+                                    <div class="impact-number">100%</div>
+                                    <div class="impact-label">Chemical Reduction</div>
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <i class="fas fa-globe-africa"></i>
+                                <div>
+                                    <div class="impact-number">1000+</div>
+                                    <div class="impact-label">Farms Protected</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-visual">
+                        <div class="mission-tabs" role="tablist">
+                            <button class="mission-tab active" role="tab" data-mission="sustainable">
+                                <i class="fas fa-seedling"></i> Sustainable
+                            </button>
+                            <button class="mission-tab" role="tab" data-mission="smart">
+                                <i class="fas fa-brain"></i> Smart
+                            </button>
+                            <button class="mission-tab" role="tab" data-mission="humane">
+                                <i class="fas fa-heart"></i> Humane
+                            </button>
+                        </div>
+                        <div class="mission-content" role="tabpanel">
+                            <h4 id="mission-title">Sustainable</h4>
+                            <p id="mission-desc">Energy-efficient solar units and chemical-free deterrents designed to protect crops without harming wildlife.</p>
+                            <div><h5>Components</h5>
+                                <img src="/assets/unit.png"  style="width: 30%;">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="section" aria-labelledby="features-heading">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge badge-secondary">
+                        <i class="fas fa-cogs"></i>
+                        <span>How It Works</span>
+                    </div>
+                    <h2 id="features-heading">Advanced Technology, Simple Operation</h2>
+                    <p class="section-subtitle">Four seamless steps to complete crop protection</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>AI-Powered Detection</h3>
+                        <p>Advanced computer vision identifies pest birds with 98% accuracy</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-wave-square"></i>
+                        </div>
+                        <h3>Smart Deterrents</h3>
+                        <p>Targeted ultrasonic signals activate only when threats detected</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Eco-Friendly</h3>
+                        <p>Zero chemicals, zero traps. Preserve the ecosystem</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <h3>Solar-Powered</h3>
+                        <p>Autonomous operation with weatherproof hardware</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="section" aria-labelledby="pricing-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="pricing-heading">Components & Pricing</h2>
+                    <p class="section-subtitle">Modular design for customized solutions</p>
+                </div>
+                
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <i class="fas fa-solar-panel fa-3x"></i>
+                        <h3>Solar Panel</h3>
+                        <p>Provides renewable energy for the entire system</p>
+                        <div class="price">$200</div>
+                        
+                    </div>
+                    <div class="pricing-card">
+                        <i class="fas fa-dove fa-3x"></i>
+                        <h3>SuperBird Xpeller</h3>
+                        <p>High-tech bird deterrent with sound and motion</p>
+                        <div class="price">$150</div>
+                        <span class="badge-featured">Essential</span>
+                    </div>
+                    <div class="pricing-card">
+                        <i class="fas fa-battery-full fa-3x"></i>
+                        <h3>Battery Storage</h3>
+                        <p>72-hour backup power for continuous operation</p>
+                        <div class="price">$100</div>
+
+                    </div>
+                    <div class="pricing-card featured">
+                        <i class="fas fa-video fa-3x"></i>
+                        <h3>AI Camera</h3>
+                        <p>Advanced vision system with real-time detection</p>
+                        <div class="price">$250</div>
+                        <span class="badge-featured">Essential</span>
+                    </div>
+                </div>
+
+                <div class="pricing-cta">
+                    <h3>Complete Package</h3>
+                    <p>Get all components for comprehensive protection</p>
+                    <div class="package-price">
+                        <span class="original-price">$700</span>
+                        <span class="discounted-price">$599</span>
+                    </div>
+                    <button class="btn btn-primary" onclick="navigateToSection('contact')">
+                        Order Complete Package
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Trusted by Farmers</h2>
+                    <p class="section-subtitle">Real results from real farmers across East Africa</p>
+                </div>
+
+                <div class="testimonials-carousel" id="testimonialsCarousel">
+                    <div class="testimonial-card active">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="testimonial-text">CropGuard saved our orchard from bird damage this season. The AI detection is incredibly accurate, and we've seen a 45% increase in our harvest yield.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <div class="author-name">Grace K.</div>
+                                <div class="author-title">Orchard Owner, Juba</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="testimonial-text">Easy to install, efficient, and completely humane. CropGuard is a game-changer for local farmers. The solar power works perfectly in our remote location.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <div class="author-name">Joseph M.</div>
+                                <div class="author-title">Vegetable Farmer, Torit</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="testimonial-text">Finally, a solution that protects our crops without harming the environment. The ROI was evident within the first harvest season.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <div class="author-name">Sarah L.</div>
+                                <div class="author-title">Farm Manager, Kampala</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-indicators">
+                    <button class="indicator active" data-slide="0" aria-label="View testimonial 1"></button>
+                    <button class="indicator" data-slide="1" aria-label="View testimonial 2"></button>
+                    <button class="indicator" data-slide="2" aria-label="View testimonial 3"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faqs" class="section" aria-labelledby="faq-heading">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge badge-secondary">
+                        <i class="fas fa-question-circle"></i>
+                        <span>Support</span>
+                    </div>
+                    <h2 id="faq-heading">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Everything you need to know about CropGuard</p>
+                </div>
+
+                <div class="faq-filters">
+                    <button class="filter-btn active" data-filter="all">All Questions</button>
+                    <button class="filter-btn" data-filter="technology">Technology</button>
+                    <button class="filter-btn" data-filter="installation">Installation</button>
+                    <button class="filter-btn" data-filter="support">Support</button>
+                </div>
+
+                <div class="faq-list">
+                    <div class="faq-item" data-category="technology">
+                        <button class="faq-question" aria-expanded="false">
+                            <i class="fas fa-brain"></i>
+                            <span>How does CropGuard detect pests?</span>
+                            <i class="fas fa-plus toggle-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>CropGuard uses advanced AI-powered computer vision combined with optional audio recognition to identify pest birds and other threats in real-time. Our neural network has been trained on thousands of images and can distinguish between different species with 98% accuracy.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="technology">
+                        <button class="faq-question" aria-expanded="false">
+                            <i class="fas fa-heart"></i>
+                            <span>Is it safe for birds and other animals?</span>
+                            <i class="fas fa-plus toggle-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutely. CropGuard uses ultrasonic signals that are non-lethal and designed to deter pests without causing harm. Unlike traps or poisons, our system encourages unwanted visitors to move on, preserving natural ecosystem balance.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="installation">
+                        <button class="faq-question" aria-expanded="false">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Can it work in remote areas?</span>
+                            <i class="fas fa-plus toggle-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes. CropGuard is solar-powered with battery backup and can connect via LoRaWAN (up to 10km), Wi-Fi, or LTE. It can operate autonomously for up to 72 hours without sunlight, making it ideal for remote farms.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="support">
+                        <button class="faq-question" aria-expanded="false">
+                            <i class="fas fa-tools"></i>
+                            <span>What maintenance is required?</span>
+                            <i class="fas fa-plus toggle-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Minimal maintenance is needed: keep solar panels clean and check mounting points seasonally. Firmware updates can be done over-the-air through the dashboard. We provide comprehensive support and maintenance guides.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="installation">
+                        <button class="faq-question" aria-expanded="false">
+                            <i class="fas fa-clock"></i>
+                            <span>How long does installation take?</span>
+                            <i class="fas fa-plus toggle-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Installation typically takes 2-4 hours per unit. Our team provides on-site installation support and training to ensure your system is properly configured for optimal performance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section" aria-labelledby="contact-heading">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge badge-secondary">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact</span>
+                    </div>
+                    <h2 id="contact-heading">Get in Touch</h2>
+                    <p class="section-subtitle">Ready to protect your harvest? We're here to help.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-form-wrapper">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name" class="sr-only">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="Full Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="sr-only">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Email Address" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="location" class="sr-only">Location</label>
+                                <input type="text" id="location" name="location" placeholder="Location / Farm">
+                            </div>
+                            <div class="form-group">
+                                <label for="farm-size" class="sr-only">Farm Size</label>
+                                <select id="farm-size" name="farm-size">
+                                    <option value="">Select Farm Size</option>
+                                    <option value="small">Less than 5 acres</option>
+                                    <option value="medium">5-20 acres</option>
+                                    <option value="large">20-50 acres</option>
+                                    <option value="enterprise">50+ acres</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="sr-only">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell us about your crop protection needs"></textarea>
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary">
+                                    Send Message
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary" onclick="resetForm()">
+                                    Clear Form
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <h3>Sales & Support</h3>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:sales@cropguard.africa">sales@cropguard.africa</a>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+250788123456">+211 788 123 456</a>
+                            </div>
+                            <div class="info-item">
+                                <i class="fab fa-whatsapp"></i>
+                                <a href="https://wa.me/250788123456">WhatsApp Support</a>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <h3>Office Locations</h3>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Juba, South Sudan</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Westport, MA</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Nairobi, Kenya</span>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <span>© 2024 CropGuard - Protecting harvests, preserving nature</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Support</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()" aria-label="Close modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <i class="fas fa-check-circle modal-icon"></i>
+            <h3>Message Sent Successfully!</h3>
+            <p>Thank you for your interest in CropGuard. Our team will contact you within 24 hours.</p>
+            <button class="btn btn-primary" onclick="closeModal()">OK</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
