@@ -285,10 +285,11 @@ a:hover {
     display: flex;
     align-items: center;
     position: relative;
-    background-image: url("new_design.png");
+    background-image: url(/assets/new_design.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     overflow: hidden;
 }
 
@@ -1095,6 +1096,10 @@ a:hover {
 
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 768px) {
+    .hero-section {
+        background-attachment: scroll;
+    }
+    
     .container {
         padding: 0 1rem;
     }
