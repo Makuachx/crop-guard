@@ -285,11 +285,11 @@ a:hover {
     display: flex;
     align-items: center;
     position: relative;
-    background-image: url(/assets/new_design.png);
+    background: linear-gradient(135deg, #faf8f3 0%, #f5f1e8 100%);
+    background-image: url("new_design.png");
     background-size: cover;
-    background-position: center;
+    background-position: fixed;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     overflow: hidden;
 }
 
@@ -1099,7 +1099,6 @@ a:hover {
     .hero-section {
         background-attachment: scroll;
     }
-    
     .container {
         padding: 0 1rem;
     }
